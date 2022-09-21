@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahabali</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo"><img src="Assets/carpet.png"></div>
+        <ul class="nav-links">
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <div class="menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Contact</a></li>
+            </div>
+        </ul>
+    </nav>
+
+
+    <!-- <div class="loader"></div> -->
+
+    <div class="container">
+        <section class="one">
+            <div class="float-area">
+                <img src="Assets/1.png" class="floating-img">
+                <br />
+                <div class="text">
+                    <h1>Greeting My Friends</h1>
+                    <p>
+                        It's quite interesting is that this year was a bit to fast, only 3 months for 2023 !
+                        Aaaah any ways its been a hella of journey for me from <strong>പാതാളം.</strong>. Hope all you having a blast
+                        this year.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="two">
+            <h1>mone</h1>
+        </section>
+
+        <section class="three">
+            <h1>denesha</h1>
+        </section>
+    </div>
+
+</body>
+
+<script>
+    var loader = document.querySelector(".loader")
+    window.addEventListener("load", vanish);
+    function vanish() {
+        loader.classList.add("disppear");
+    }
+</script>
+
+</html>
