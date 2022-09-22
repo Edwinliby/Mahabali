@@ -1,0 +1,95 @@
+.bouncing-text {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+    font-family: arial black;
+    /* background-color: aquamarine; */
+}
+
+@media (max-width: 700px) {
+    .bouncing-text {
+        margin-top: 2em;
+        font-size: 35px;
+    }
+}
+
+.h,
+.a,
+.p,
+.pp,
+.y,
+.o,
+.n,
+.aa,
+.m {
+    color: #FAA932;
+    text-shadow: 0 3px #559A43, 0 5px #49B62C, 0 7px #34D20B;
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    10% {
+        transform: scale(1.1, .9) translateY(0);
+    }
+
+    30% {
+        transform: scale(.9, 1.1) translateY(-55px);
+    }
+
+    50% {
+        transform: scale(1.05, .95) translateY(0);
+    }
+
+    58% {
+        transform: scale(1, 1) translateY(-7px);
+    }
+
+    65% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    100% {
+        transform: scale(1, 1) translateY(0);
+    }
+}
+
+.h {
+    animation: bounce 1s ease infinite;
+}
+
+.a {
+    animation: bounce 1s ease infinite .1s;
+}
+
+.p {
+    animation: bounce 1s ease infinite .2s;
+}
+
+.pp {
+    animation: bounce 1s ease infinite .3s;
+}
+
+.y {
+    animation: bounce 1s ease infinite .4s;
+}
+
+.o {
+    animation: bounce 1s ease infinite .5s;
+}
+
+.n {
+    animation: bounce 1s ease infinite .6s;
+}
+
+.aa {
+    animation: bounce 1s ease infinite .7s;
+}
+
+.m {
+    animation: bounce 1s ease infinite .8s;
+}

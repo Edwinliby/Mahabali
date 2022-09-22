@@ -5,8 +5,9 @@
     box-sizing: border-box;
     position: fixed;
     width: 100%;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(8px);
     color: black;
+    z-index: 99;
     top: 0;
 }
 
@@ -82,7 +83,7 @@ input[type=checkbox] {
     .menu {
         display: none;
         position: absolute;
-        background-color: rgb(0, 0, 0, 0.5);
+        background-color: rgba(150, 150, 150, 0.9);
         right: 0;
         left: 0;
         text-align: center;
@@ -101,6 +102,10 @@ input[type=checkbox] {
         margin-right: 1em;
     }
 
+    .menu li a{
+        color: white;
+    }
+    
     .menu li a:hover {
         background-color: orange;
         border-radius: 5px;

@@ -10,6 +10,10 @@ strong {
     color: red;
 }
 
+b {
+    color: green;
+}
+
 .dot {
     color: orange;
 }
@@ -18,6 +22,7 @@ strong {
     display: flex;
     align-items: center;
     justify-content: center;
+    /* background-color: aqua; */
 }
 
 .icon img {
@@ -30,15 +35,27 @@ strong {
 }
 
 .loader {
-    background: white url(Assets/loader.gif) no-repeat center;
-    height: 100vh;
-    width: 100%;
     position: fixed;
-    z-index: 10;
+    top: 0;
+    left: 0;
+    background: #FCFCFF;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.exp {
+    padding-top: 2em;
+    font-weight: 500;
+    font-size: 1.1em;
 }
 
 .disppear {
-    animation: vanish 3s forwards;
+    animation: vanish 4s forwards;
 }
 
 @keyframes vanish {
@@ -56,11 +73,13 @@ strong {
 .one,
 .two,
 .three {
-    /* background-color: aquamarine; */
+    /* background-color: blue; */
+    padding-top: 2em;
     height: 50em;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    z-index: -2;
 }
 
 .row1 img {
@@ -68,32 +87,38 @@ strong {
     animation: floater 4s infinite;
     transition: ease 0.5s;
     height: auto;
+    z-index: -2;
     /* background-color: black; */
 }
 
 .text {
     width: 40em;
-    /* background-color: aqua; */
+    /* background-color: aquamarine; */
 }
 
 .text h1 {
     display: inline;
     font-size: 3em;
+    /* background-color: beige; */
 }
 
 .text p {
     font-size: 1.5em;
+    /* background-color: blanchedalmond; */
 }
 
 .four {
     display: flex;
     flex-direction: column;
     height: 50em;
-    /* background-color: bisque; */
+    z-index: -2;
+    /* background-color: blueviolet; */
 }
 
 .four .row1 img {
+    /* background-color: brown; */
     height: 20em;
+    z-index: -2;
 }
 
 .col,
@@ -101,6 +126,7 @@ strong {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    /* background-color: chartreuse; */
 }
 
 @keyframes floater {
@@ -116,6 +142,10 @@ strong {
 }
 
 @media (max-width: 700px) {
+    .loader img{
+        height: 15em;
+        background-size: contain;
+    }
 
     .one,
     .three {
@@ -143,18 +173,21 @@ strong {
         margin-top: 4em;
     }
 
-.four{
-    height:70em;
-}
+    .four {
+        height: 70em;
+    }
 
-    .four .row1 img{
+    .four .row1 img {
         height: 15em;
+    }
+
+    .icon img {
+        height: 1.8em;
     }
 }
 
 /* footer  */
 footer {
-    background-color: aqua;
     text-align: center;
     margin-top: 2em;
     padding: 1em;
@@ -174,6 +207,11 @@ footer {
     color: black;
     font-size: 1.1em;
     font-weight: 500;
+}
+
+.title p a{
+    text-decoration: none;
+    color: palevioletred;
 }
 
 .title ul a:hover {
